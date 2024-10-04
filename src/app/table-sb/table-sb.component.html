@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>SuperBowl Champion's - NFL</h1>
+  <table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Edição</th>
+        <th scope="col">Campeão</th>
+        <th scope="col">Placar</th>
+        <th scope="col">Oponente</th>
+        <th scope="col">MVP SuperBowl</th>
+        <th scope="col">Ano</th>
+        <th scope="col">Local</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let superBowlChampions of superBowlChampions">
+        <th scope="row">{{superBowlChampions.id}}</th>
+        <th>{{superBowlChampions.champions}}</th>
+        <th>{{superBowlChampions.score}}</th>
+        <th>{{superBowlChampions.opponent}}</th>
+        <th>{{superBowlChampions.mvp}}</th>
+        <th>{{superBowlChampions.year}}</th>
+        <th>{{superBowlChampions.local}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
